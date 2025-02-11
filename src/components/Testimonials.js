@@ -27,9 +27,12 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="p-10 text-center bg-gradient-to-r from-background to-secondary text-foreground rounded-lg shadow-lg max-w-4xl mx-auto h-72 flex flex-col justify-center">
-      <h3 className="text-4xl font-bold text-primary mb-6">What Our Clients Say</h3>
-      <div className="relative w-full overflow-hidden h-24 flex items-center justify-center">
+    <section className="p-6 md:p-10 text-center bg-gradient-to-r from-background to-secondary text-foreground rounded-lg shadow-lg max-w-4xl mx-auto min-h-64 flex flex-col justify-center">
+      {/* Heading */}
+      <h3 className="text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">What Our Clients Say</h3>
+
+      {/* Testimonial Carousel */}
+      <div className="relative w-full overflow-hidden min-h-36 md:min-h-36 flex items-center justify-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -37,15 +40,16 @@ const Testimonials = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -50 }}
             transition={{ duration: 0.6 }}
-            className="absolute text-lg italic px-4 w-full text-center"
+            className="absolute text-base md:text-lg italic px-4 w-full text-center"
           >
             &ldquo;{testimonials[index].text}&rdquo;
-            <p className="mt-4 font-bold text-accent">{testimonials[index].author}</p>
+            <p className="mt-2 md:mt-4 font-bold text-accent">{testimonials[index].author}</p>
           </motion.div>
         </AnimatePresence>
       </div>
     </section>
   );
 };
+
 
 export default Testimonials;
