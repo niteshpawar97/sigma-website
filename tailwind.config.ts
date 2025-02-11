@@ -13,7 +13,7 @@ export default {
         foreground: "#EAEAEA", // Light Grey Foreground
         primary: "#FDC830", // Yellow for Buttons
         "primary-dark": "#D4A017", // Darker Yellow for Hover
-        secondary: "#222831", // Dark Background
+        secondary: "#1F2937", // Dark Background
         accent: "#00ADB5", // Cyan Accent
         highlight: "#FF5733", // Orange-Red Highlight
         "header-bg": "#0F3460", // Deep Blue Header Background
