@@ -18,8 +18,9 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Established in 2002, we provide high-quality industrial solutions including CNC Machines, 
-          Bar Bending Machines, and Rebar Cutting Machines. 
+          Established in 2002, we provide high-quality industrial solutions, including CNC Machines,
+          Bar Bending Machines, Rebar Cutting Machines, Threading Machines, and Forging Machines.
+
         </motion.p>
         <motion.div
           className="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 justify-center"
