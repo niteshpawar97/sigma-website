@@ -12,19 +12,19 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section>
-      <h3 className="text-4xl">Why Choose Us?</h3>
+    <section className="bg-background text-foreground py-12 px-6">
+      <h3 className="text-4xl font-bold text-primary text-center">Why Choose Us?</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="flex items-center space-x-3 bg-gray-800 p-4 rounded-lg"
+            className="flex items-center space-x-3 bg-secondary p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <CheckCircleIcon className="h-6 w-6 text-green-500" />
-            <span className="text-lg">{feature}</span>
+            <CheckCircleIcon className="h-6 w-6 text-accent" />
+            <span className="text-lg text-foreground">{feature}</span>
           </motion.div>
         ))}
       </div>

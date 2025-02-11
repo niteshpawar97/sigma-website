@@ -23,7 +23,7 @@
 
 /* Custom Styling */
 body {
-  @apply bg-gray-900 text-white;
+  @apply bg-background text-foreground;
   font-family: "Inter", sans-serif;
 }
 
