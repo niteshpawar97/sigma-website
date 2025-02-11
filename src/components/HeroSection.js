@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -28,12 +29,19 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
         >
-          <button className="px-6 py-3 bg-primary text-secondary font-semibold rounded-full hover:bg-primary-dark transition duration-300">
-            Learn More
-          </button>
-          <button className="px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition duration-300">
-            Contact Us
-          </button>
+            {/* Learn More Button */}
+            <Link href="/about">
+            <button className="px-6 py-3 bg-primary text-secondary font-semibold rounded-full hover:bg-primary-dark transition duration-300">
+              Learn More
+            </button>
+          </Link>
+
+          {/* Contact Us Button */}
+          <Link href="/contact">
+            <button className="px-6 py-3 border border-white text-white font-semibold rounded-full hover:bg-white hover:text-gray-900 transition duration-300">
+              Contact Us
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>
