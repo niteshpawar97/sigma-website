@@ -31,8 +31,12 @@ const Header = () => {
         </button>
       </div>
       
-      {/* Mobile Menu */}
-      <div className={`md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-95 flex flex-col items-center space-y-6 pt-20 transition-transform duration-300 ${isOpen ? "translate-y-0" : "-translate-y-full"}`}>
+      {/* Mobile Menu - Fixed */}
+      <div
+        className={`fixed inset-0 z-50 bg-header-gradient bg-opacity-95 flex flex-col items-center justify-center space-y-6 transition-opacity duration-300 ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
         <button
           className="absolute top-5 right-5 text-white"
           onClick={() => setIsOpen(false)}
