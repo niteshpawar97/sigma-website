@@ -22,7 +22,7 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 

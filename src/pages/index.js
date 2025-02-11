@@ -5,6 +5,10 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import ProductsOverview from "../components/ProductsOverview";
 import Testimonials from "../components/Testimonials";
 import ContactSection from "../components/ContactSection";
+import ServicesOverview from "../components/ServicesOverview";
+// import LatestNews from "../components/LatestNews";
+import FAQSection from "../components/FAQSection";
+// import CallToAction from "../components/CallToAction";
 
 export default function Home() {
   return (
@@ -16,8 +20,14 @@ export default function Home() {
       </Head>
       <HeroSection />
       <WhyChooseUs />
+      
+      <ServicesOverview />
       <ProductsOverview />
       <Testimonials />
+      
+      {/* <LatestNews /> */}
+      <FAQSection />
+      {/* <CallToAction /> */}
       <ContactSection />
     </Layout>
   );
