@@ -27,7 +27,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="p-10 text-center bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg shadow-lg max-w-4xl mx-auto h-72 flex flex-col justify-center">
+    <section className="p-10 text-center bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-lg shadow-lg max-w-4xl mx-auto h-56 flex flex-col justify-center">
       <h3 className="text-4xl font-bold mb-6">What Our Clients Say</h3>
       <div className="relative w-full overflow-hidden h-24 flex items-center justify-center">
         <AnimatePresence mode="wait">
@@ -39,7 +39,7 @@ const Testimonials = () => {
             transition={{ duration: 0.6 }}
             className="absolute text-lg italic px-4 w-full text-center"
           >
-            "{testimonials[index].text}"
+            &ldquo;{testimonials[index].text}&rdquo;
             <p className="mt-4 font-bold text-yellow-400">{testimonials[index].author}</p>
           </motion.div>
         </AnimatePresence>
