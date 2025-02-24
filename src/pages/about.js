@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { FaIndustry, FaLightbulb, FaTools } from "react-icons/fa";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -97,9 +98,11 @@ export default function About() {
 
         {/* Contact Button */}
         <div className="mt-12">
+          <Link href="/contact">
           <button className="px-6 py-3 text-lg font-semibold bg-primary text-white rounded-lg shadow-md transition-transform transform hover:scale-105">
             Contact Us
           </button>
+        </  Link>
         </div>
       </main>
     </Layout>
