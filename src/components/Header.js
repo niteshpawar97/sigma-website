@@ -17,6 +17,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-6 text-lg">
           <Link href="/" className="hover:text-accent transition duration-300">Home</Link>
           <Link href="/about" className="hover:text-accent transition duration-300">About</Link>
+          <Link href="/manufacturing" className="hover:text-accent transition duration-300">Manufacturing</Link>
           <Link href="/services" className="hover:text-accent transition duration-300">Services</Link>
           <Link href="/products" className="hover:text-accent transition duration-300">Products</Link>
           <Link href="/contact" className="hover:text-accent transition duration-300">Contact</Link>
@@ -46,6 +47,7 @@ const Header = () => {
 
         <Link href="/" className="text-xl hover:text-accent transition duration-300" onClick={() => setIsOpen(false)}>Home</Link>
         <Link href="/about" className="text-xl hover:text-accent transition duration-300" onClick={() => setIsOpen(false)}>About</Link>
+        <Link href="/manufacturing" className="text-xl hover:text-accent transition duration-300" onClick={() => setIsOpen(false)}>Manufacturing</Link>
         <Link href="/services" className="text-xl hover:text-accent transition duration-300" onClick={() => setIsOpen(false)}>Services</Link>
         <Link href="/products" className="text-xl hover:text-accent transition duration-300" onClick={() => setIsOpen(false)}>Products</Link>
         <Link href="/contact" className="text-xl hover:text-accent transition duration-300" onClick={() => setIsOpen(false)}>Contact</Link>
